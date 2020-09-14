@@ -443,7 +443,7 @@ ol {
   position: absolute;
   left: 0;
   top: 115px;
-  width: 180px;
+  width: 280px;
   background: #ffffff;
   z-index: 99;
   opacity: 0;
@@ -725,7 +725,7 @@ ol {
 }
 
 .soccer-item {
-  height: 180px;
+  height: 120px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -1447,6 +1447,7 @@ ol {
   color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
+  text-shadow: 3px 3px 1px black;
 }
 
 /*---------------------
