@@ -16,6 +16,94 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <style>
+    
+    .cmd{
+      position: relative;
+      display: block;
+      
+      height: 100vh;
+      width: 100%;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      overflow: hidden;
+      
+      box-shadow: 0px 8px 18px #4b1d3f;
+    }
+    
+    /*
+     * 1. Set position
+     * 2. Set dimension
+     * 3. Style
+     */
+    .title-bar{
+      /* 1 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      /* 2 */
+      width: 100%;
+      height: 40px;
+      /* 3 */
+      display: block;
+      color: #FFFFFF;
+      line-height: 40px;
+      font-weight: 600;
+      background-color: #242424;
+      text-align: center;
+    }
+    
+    .tool-bar{
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      background-color: #242424;
+    }
+    
+    .tool-bar ul{
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .tool-bar ul li{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .tool-bar ul li a{
+      padding: 0px 6px;
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    
+    .tool-bar ul li a:hover{
+      text-decoration: underline;
+    }
+    
+    .textarea{
+      position: relative;
+      top: 70px;
+      padding: 12px;
+      
+      resize: none;
+      width: 100%;
+      height: calc(100% - 70px);
+      background-color: #4b1d3f;
+      border: none;
+      color: #FFFFFF;
+      margin: 0px;
+      font-size: 1.1rem;
+    }
+    </style>
   </head>
 
   <body>
@@ -203,13 +291,13 @@
                         </h4>
                       </div>
                       <div class="ci-name2">  <br>
-                        ∙ 참여 방법 : 꿈꾸는아이(AI) 홈페이지 (https://dreamai.kr/fair_nvidia) 에서 신청 <br>
-                        ※ 제출 된 신청서는 GIST 및 NVIDIA 전문가 팀의 평가를 거쳐 선정됩니다. <br>
-                   ∙ 참가신청서 : 구글폼 확인 및 작성(URL: <a href="https://forms.gle/TsBP8en8v8zom7vt5">https://forms.gle/TsBP8en8v8zom7vt5</a> )<br>
-                   ∙ 참가신청 / 마감 : 2020년 9월 15일 ~ 2020년 10월 9일<br>
-                   ∙ 참가신청서 검토 및 발표 : 2020년 10월 16일<br>
-                      꿈꾸는아이(AI) 홈페이지 (dreamai.kr) 및 팀장 개별 문자 발송<br>
-                   ∙ 문의 : 광주과학기술원 인공지능연구소 윤여원/ e-mail info@giai.kr (email only)<br> <br> <br> 
+∙ 참여 방법 : 꿈꾸는아이(AI) 홈페이지 (dreamai.kr) 에서 신청 <br>
+※ 제출 된 신청서는 GIST 및 NVIDIA 전문가 팀의 평가를 거쳐 선정됩니다. <br>
+∙ 참가신청서 : 구글폼 확인 및 작성(URL: https://forms.gle/TsBP8en8v8zom7vt5)<br>
+∙ 참가신청 / 마감 : 2020년 9월 15일 ~ 2020년 10월 9일 <br>
+∙ 참가신청서 검토 및 발표 : 2020년 10월 16일 <br>
+꿈꾸는아이(AI) 홈페이지 (dreamai.kr) 및 팀장 개별 문자 발송 <br>
+∙ 문의 : 광주과학기술원 인공지능연구소 윤여원/ e-mail info@giai.kr (email only) <br> <br> <br>
                    <a class="button-3d" href="https://forms.gle/TsBP8en8v8zom7vt5
                    " style="
     margin-left: 40%;
@@ -626,23 +714,37 @@ A. 해커톤은  대학, 연구소의 연구원, 학자, 신생 기업 
                       <br>
                      Reference Dataset <br>
                       <br>
-                     ChestXray14 (112000 images of 14 diseased and normal CXR images) <br>
-                     https://nihcc.app.box.com/v/ChestXray-NIHCC <br>
-                     RSNA Pneumonia Detection Challenge’ <br>
-                     https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data <br>
-                     Chest X-Ray Images Pneumonia <br>
-                     https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia <br>
-                     COVID-19 Image <br>
-                     https://github.com/ieee8023/covid-chestxray-dataset <br>
-                     Audio Dataset <br>
-                     https://github.com/iiscleap/Coswara-Data <br>
-                     https://www.covid-19-sounds.org/en/ <br>
-                     https://github.com/virufy/covid <br>
-                     Other <br>
-                     https://github.com/haydengunraj/COVIDNet-CT <br>
-                     https://github.com/ieee8023/covid-chestxray-dataset <br>
-                     These are links to sample dataset for reference purpose only. Participants are free to use these or other datasets after studying respective licenses <br>
-                      <br>
+                        <div class="cmd">
+                          <div class="title-bar">reference</div>
+                          <div class="tool-bar">
+                            <ul>
+                              <li><a href="#">File</a></li><li><a href="#">Link</a></li>
+                            </ul>
+                          </div>
+                          <textarea class="textarea" disabled>ChestXray14 (112000 images of 14 diseased and normal CXR images)
+https://nihcc.app.box.com/v/ChestXray-NIHCC
+
+RSNA Pneumonia Detection Challenge’
+https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data
+
+Chest X-Ray Images Pneumonia
+https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+
+COVID-19 Image
+https://github.com/ieee8023/covid-chestxray-dataset
+
+Audio Dataset
+https://github.com/iiscleap/Coswara-Data
+https://www.covid-19-sounds.org/en/
+https://github.com/virufy/covid
+
+Other
+https://github.com/haydengunraj/COVIDNet-CT
+https://github.com/ieee8023/covid-chestxray-dataset
+
+These are links to sample dataset for reference purpose only. Participants are free to use these or other datasets after studying respective licenses</textarea>
+                        </div>
+                        <br>
                      Prior Work/Reference <br>
                       <br>
                      https://www.quantib.com/ blog/ diagnosing-covid-19-using -ai- basedmedical - image-analyses <br>
