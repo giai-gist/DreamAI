@@ -233,6 +233,10 @@ ol {
 }
 
 /* Preloder */
+.logo a {
+  font-size: 18px;
+  color: white;
+}
 
 #preloder {
   position: fixed;
@@ -2652,6 +2656,11 @@ ol {
 /* Small Mobile: 320px */
 
 @media only screen and (max-width: 479px) {
+  .logo a {
+    font-size: 16px;
+    color: white;
+  }
+
   .button-3d {
     position: absolute;
     right: 1%;
