@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="DreamAI | 꿈꾸는아이" />
+    <meta name="description" content="꿈꾸는아이" />
     <meta name="keywords" content="DreamAI, GIST, GIST AI, DreamAI fair" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/giai-gist/DreamAI/gh-pages/img/LO.png"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>꿈꾸는아이</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      /* IE10+ */
+      @font-face {
+        font-family: "BMDOHYEON";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
+      rel="stylesheet"
+    />
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
@@ -28,10 +56,9 @@
         <i class="fa fa-close"></i>
       </div>
       <ul class="main-menu mobile-menu">
-        <li><a href="./">Home</a></li>
-        <li><a href="./About">About</a></li>
+        <li><a href="./About">소개</a></li>
         <li class="active">
-          <a href="./fair">fair</a>
+          <a href="./fair">경진대회</a>
           <ul class="dropdown">
             <li><a href="/fair_nvidia">2020 GIST-NVIDIA DREAM_AI Healthcare Hackathon </a></li>
             <li><a href="/fair_intel">2020 GIST-Intel DREAM_AI Drone Competition</a></li>
@@ -40,7 +67,7 @@
             <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
           </ul>
         </li>
-        <li><a href="./school">School</a></li>
+        <li><a href="./school">드림스쿨</a></li>
         <!-- <li><a href="#">meet up</a></li> -->
       </ul>
       <div id="mobile-menu-wrap"></div>
@@ -49,30 +76,54 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
-      <div class="header__nav">
+      <div class="header__nav" style="height: 100px">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="logo">
-                <a href="./" style="font-weight: 500;text-transform: uppercase;padding: 7px 0;">인공지능산업융합사업단 | GIST 인공지능연구소</a>
+            <div class="col-lg-3">
+              <div class="logo" style="position: inherit; top: -12px">
+                <a
+                  href="./"
+                  style="
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 7px 0;
+                    font-size: 30px;
+                  "
+                  ><img
+                    src="img/AI_icon_white_small.png"
+                    alt=""
+                    style="width: 36px; top: -4px; position: relative"
+                  />
+                  꿈꾸는아이</a
+                ><br />
+                <p style="font-size: 6px; color: white; position: absolute; top: 74px">
+                  인공지능산업융합사업단 |
+                  <img src="img/logo3.png" alt="" style="width: 33px" />
+                  <font style="color: #bb1c1c">G</font>IST 인공지능연구소
+                </p>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <div class="nav-menu">
-                <ul class="main-menu">
-                  <li><a href="./">Home</a></li>
-                  <li><a href="./About">About</a></li>
+                <ul class="main-menu" style="font-size: 2.5em">
+                  <li><a href="./About">소개</a></li>
                   <li class="active">
-                    <a href="./fair">fair</a>
+                    <a href="./fair">경진대회</a>
                     <ul class="dropdown">
-                      <li><a href="/fair_nvidia">2020 GIST-NVIDIA DREAM_AI Healthcare Hackathon </a></li>
+                      <li>
+                        <a href="/fair_nvidia">2020 GIST-NVIDIA DREAM_AI Healthcare Hackathon </a>
+                      </li>
                       <li><a href="/fair_intel">2020 GIST-Intel DREAM_AI Drone Competition</a></li>
                       <li><a href="/fair_aws">2020 DREAM_AI DeepRacer Competition</a></li>
-                      <li><a href="/fair_lge">2020 GIST-LGElectronics DREAM_AI ThinQ Hackathon</a></li>
+                      <li>
+                        <a href="/fair_lge">2020 GIST-LGElectronics DREAM_AI ThinQ Hackathon</a>
+                      </li>
                       <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
                     </ul>
                   </li>
-                  <li><a href="./school">School</a></li>
+                  <li>
+                    <a href="./school">드림스쿨</a>
+                  </li>
                   <!-- <li><a href="#">meet up</a></li> -->
                 </ul>
               </div>
