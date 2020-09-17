@@ -581,11 +581,11 @@ ol {
   font-size: 20px;
   color: #ffffff;
   font-weight: 500;
-  background: #dd1515;
-  text-align: right;
+  background: #3a4288;
+  /* text-align: right; */
   padding-right: 75px;
-  padding-top: 14px;
-  width: 32%;
+  /* padding-top: 14px; */
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;

@@ -44,6 +44,14 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      .menu-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+      }
+    </style>
   </head>
 
   <body>
@@ -56,6 +64,9 @@
         <i class="fa fa-close"></i>
       </div>
       <ul class="main-menu mobile-menu">
+        <li>
+          <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
+        </li>
         <li><a href="./About">소개</a></li>
         <li class="active">
           <a href="./fair">AI경진대회</a>
@@ -106,6 +117,9 @@
             <div class="col-lg-9">
               <div class="nav-menu">
                 <ul class="main-menu" style="font-size: 2.5em">
+                  <li>
+                    <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
+                  </li>
                   <li><a href="./About">소개</a></li>
                   <li class="active">
                     <a href="./fair">AI경진대회</a>
@@ -143,13 +157,55 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="bs-text">
-              <h2>꿈꾸는아이 경진대회 시즌1</h2>
+              <h2>
+                <img
+                  src="img/AI_icon_white_small.png"
+                  alt=""
+                  style="width: 53px; top: -6px; position: relative"
+                />
+                꿈꾸는아이 경진대회 시즌1
+              </h2>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="main-menu2" style="text-align: center">
+      <div class="trending-news-section">
+        <div class="container">
+          <div class="tn-title"><i class="fa fa-caret-right"></i> Trending News 입니다</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //상대적인 좌표 값을 반환, .offset()가 반환 하는 객체는 left와 top 속성을 제공
+
+        //top 속성을 이용해서 메뉴의 수직 위치를 구함
+
+        var menu_offset = $(".main-menu2").offset()
+
+        //스크롤 바를 스크롤할 때 매개변수로 전달된 함수를 실행시킴
+
+        $(window).scroll(function () {
+          //문서의 스크롤바 위치와 메뉴의 수직 위치를 비교해서
+
+          //문서의 스크롤바 위치가 메뉴의 수직 위치보다 크면(위치로 표현하면 아래)
+
+          if ($(document).scrollTop() > menu_offset.top) {
+            //메뉴에 menu-fixed 클래스를 추가해서 메뉴를 고정시킴
+
+            $(".main-menu2").addClass("menu-fixed")
+          } else {
+            //메뉴에서 menu-fized 클래스를 제거해서 메뉴를 수직으로 이동할 수 있도록 처리함
+
+            $(".main-menu2").removeClass("menu-fixed")
+          }
+        })
+      })
+    </script>
 
     <!-- Results Section Begin -->
     <section class="schedule-section spad">
@@ -198,16 +254,8 @@
                     >
                       GIST-NVIDIA
                     </td>
-                    <td
-                      style="
-                        border-bottom: 1px solid #444444;
-                        border-right: 1px solid #444444;
-                        padding: 10px;
-                      "
-                    >
-                      8팀 본선 진출
-                    </td>
-                    <td rowspan="5" style="padding: 10px">
+                    <td style="border-bottom: 1px solid #444444; padding: 10px">8팀 본선 진출</td>
+                    <td rowspan="5" style="padding-left: 30px">
                       상금 내역 <br />- 1등( 4팀): 각 팀당 2,000만원 <br />
                       - 2등( 4팀): 각 팀당 850만원 <br />
                       - 3등( 8팀): 각 팀당 500만원 <br />
@@ -224,15 +272,7 @@
                     >
                       GIST-LG전자
                     </td>
-                    <td
-                      style="
-                        border-bottom: 1px solid #444444;
-                        border-right: 1px solid #444444;
-                        padding: 10px;
-                      "
-                    >
-                      8팀 본선 진출
-                    </td>
+                    <td style="border-bottom: 1px solid #444444; padding: 10px">8팀 본선 진출</td>
                   </tr>
                   <tr>
                     <td
@@ -288,7 +328,7 @@
                 /></b>
                 ∙ 접수된 참가신청서를 검토하여 예선 참가팀 선발 <br />
                 ∙ 예선: 10월 중순 ~ 11월 초순 <br />
-                ∙ 본선: 11월 3째주(일자는 추후 확정) <br />
+                ∙ 본선: 11월 중 <br />
                 <br />
                 <br /><br /><b style="font-size: 1.3em">03. 참가대상</b><br /><br />
                 ∙ 인공지능에 관심 있는 대한민국 국민 누구나 참가 가능 <br />
@@ -317,7 +357,7 @@
                 <br />
                 ∙ 꿈꾸는아이 경진대회 참가를 위해서는
                 <mark
-                  ><b>참가동의서 및 개인정보 수집 및 이용 동의서 (다운로드) </b
+                  ><b>⑴참가동의서 및 ⑵개인정보 수집 및 이용 동의서 (다운로드) </b
                   ><img src="img/pdf.png" alt="" style="width: 50px"
                 /></mark>
                 를 제출하셔야 합니다. <br />
