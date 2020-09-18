@@ -77,7 +77,7 @@
           <ul class="dropdown">
             <li><a href="/fair_nvidia">2020 GIST-NVIDIA DREAM_AI Healthcare Hackathon </a></li>
             <li><a href="/fair_intel">2020 GIST-Intel DREAM_AI Drone Competition</a></li>
-            <li><a href="/fair_aws">2020 GIST-AWS DREAM_AI DeepRacer Competition</a></li>
+            <li><a href="/fair_aws">2020 DREAM_AI DeepRacer Competition</a></li>
             <li><a href="/fair_lge">2020 GIST-LGElectronics DREAM_AI ThinQ Hackathon</a></li>
             <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
           </ul>
@@ -133,7 +133,7 @@
                         <a href="/fair_nvidia">2020 GIST-NVIDIA DREAM_AI Healthcare Hackathon </a>
                       </li>
                       <li><a href="/fair_intel">2020 GIST-Intel DREAM_AI Drone Competition</a></li>
-                      <li><a href="/fair_aws">2020 GIST-AWS DREAM_AI DeepRacer Competition</a></li>
+                      <li><a href="/fair_aws">2020 DREAM_AI DeepRacer Competition</a></li>
                       <li>
                         <a href="/fair_lge">2020 GIST-LGElectronics DREAM_AI ThinQ Hackathon</a>
                       </li>
@@ -186,19 +186,162 @@
 
     <!-- Blog Details Section Begin -->
     <!-- 교육시작 -->
-    <section class="blog-details-section spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" style="text-align: center">
-            <br /><br />
-            <img src="img/error.png" alt="" style="width: 5%" /> <br /><br />
-            <br />
-            <p>2020 GIST-AWS DREAM_AI DeepRacer Competition는 준비중에 있습니다.</p>
-            <br />
-            <br />
+    <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="main-menu2" style="text-align: center">
+      <div class="trending-news-section">
+        <div class="container">
+          <div class="tn-title">
+            <a href="#GIAI1" style="color: white"> <i class="fa fa-caret-right"></i> 개요</a>
+            &nbsp;&nbsp;<a style="color: white" href="#GIAI2">
+              <i class="fa fa-caret-right"></i>
+              문제소개</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI3"> <i class="fa fa-caret-right"></i> FAQ</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI0"> <i class="fa fa-caret-right"></i> 신청하기</a
+            >&nbsp;&nbsp;
           </div>
         </div>
       </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //상대적인 좌표 값을 반환, .offset()가 반환 하는 객체는 left와 top 속성을 제공
+
+        //top 속성을 이용해서 메뉴의 수직 위치를 구함
+
+        var menu_offset = $(".main-menu2").offset()
+
+        //스크롤 바를 스크롤할 때 매개변수로 전달된 함수를 실행시킴
+
+        $(window).scroll(function () {
+          //문서의 스크롤바 위치와 메뉴의 수직 위치를 비교해서
+
+          //문서의 스크롤바 위치가 메뉴의 수직 위치보다 크면(위치로 표현하면 아래)
+
+          if ($(document).scrollTop() > menu_offset.top) {
+            //메뉴에 menu-fixed 클래스를 추가해서 메뉴를 고정시킴
+
+            $(".main-menu2").addClass("menu-fixed")
+          } else {
+            //메뉴에서 menu-fized 클래스를 제거해서 메뉴를 수직으로 이동할 수 있도록 처리함
+
+            $(".main-menu2").removeClass("menu-fixed")
+          }
+        })
+      })
+    </script>
+    <!-- 교육시작 -->
+    <section class="club-section spad">
+      <div class="container">
+        <div class="club-tab-list">
+          <div class="row">
+            <br />
+            <div style="text-align: center; margin-left: auto; margin-right: auto">
+              <a href="/fair#notice"
+                ><p style="color: red; background-color: #fff8dcc2">
+                  "경진대회 내용 및 공지사항을 충분히 숙지하신 후에, 종목 참가신청을 해 주시기
+                  바랍니다." <img src="img/click.png" alt="click" style="width: 23px" /></p
+              ></a>
+            </div>
+            <br />
+
+            <!-- 
+           <ul class="nav nav-tabs" role="tablist">
+             <li class="nav-item">
+               <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">안내</a >
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">접수방법</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">문제소개</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">FAQ</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#tabs-111">ENG</a>
+             </li>
+           </ul> -->
+            <!-- Tab panes 2222222222222222222222222-->
+            <div class="container text-justify" id="GIAI1">
+              <div class="row col-12 mb-5 mt-5 justify-content-center">
+                <div class="col-md-8 text-center">
+                  <h2
+                    class="section-title mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay=""
+                    style="font-size: 24px"
+                  >
+                    2020 GIST-INTEL DREAM_AI Drone Competition
+                  </h2>
+                  <h3
+                    class="section-title-sub mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  ></h3>
+                </div>
+                <div
+                  class="col-12 ml-auto text-justify aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    <b style="font-size: 1.3em">00. AI Drone Competition 소개</b><br /><br />
+
+                    📌 “2020 GIST-INTEL DREAM_AI Drone Competition (이하 AI Drone Competition)”은
+                    드론으로부터 취득된 데이터를 기반으로 컴퓨터 비전 및 관련 알고리즘을 이용하여
+                    새로운 기회를 선점하는 것을 지향하고 있습니다. AI Drone Competition은 딥러닝을
+                    위한 데이터 획득부터 전처리, 학습, 추론 등 관련 기술을 습득함으로써 딥러닝의
+                    전체 프로세스를 이해할 뿐만 아니라 경진대회 참가자의 창의력 증진을 통한 문제
+                    정의, 해결 능력을 겨룹니다. <br />
+                    <br /><br />
+                    <b style="font-size: 1.3em">01. AI Drone Competition 참가신청 안내</b
+                    ><br /><br />
+                    가. “2020 GIST-INTEL DREAM_AI Drone Competition” 참가신청서를 작성합니다. <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;(※ AI 기초지식이 없는 사람도 참여 가능) <br />
+                    나. 참가신청서 제출마감은 10월 2일(금) 24시 정각까지입니다. <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;(※ 일정은 변동될 수 있습니다.) <br />
+                  </p>
+
+                  <br />
+                  <p>
+                    <b style="font-size: 1.3em"> 02. 예선 참가팀 선정 및 사전교육</b><br /><br />
+                    가. 서류 심사 및 예선 참가팀 선정: 2020년 10월 5일(월)에 홈페이지 및 개별 안내
+                    <br />
+                    나. 사전교육은 코로나 19로 인해 2020년 10월 6일(화) ~ 10월 9일(금)까지
+                    온라인으로 진행 <br />
+                    다. 예선 전 오프라인 드론 날리기 연습은 10월 15일(목) ~ 10월 16일(금)까지
+                    개별적으로 진행 <br />
+                    (※ 상기 일정은 변동될 수 있습니다.) <br /><br />
+                    <b style="font-size: 1.3em"> 03. 예선 진행</b><br /><br />
+                    가. 2020년 10월 16일(토) (※ 오프라인으로 진행되며, 일정은 변동될 수
+                    있습니다.)<br />
+                    나. 자세한 예선 방식은 예선 참가팀 선정 후 공지 예정
+                    <br /><br />
+                    <b style="font-size: 1.3em"> 04. 본선 진출팀 선정</b><br /><br />
+                    가. 전문 심사위원의 심사를 거쳐 본선 진출팀 선정<br />
+                    나. 본선 진출팀 : 2020년 10월 30일(금)까지 홈페이지 및 개별 안내<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;(※ 일정은 변동될 수 있습니다.)<br /><br />
+                    <b style="font-size: 1.3em"> 05. 참가신청 시 주의사항</b><br /><br />
+                    가. 참가팀 구성은 최소 1인부터 최대 4명까지 가능하며 팀당 1개의 아이디로 신청
+                    <br />
+                    <br /><br />
+                    <b style="font-size: 1.3em"> 06. 참가신청 및 기타 문의 <br /></b><br />
+                    ∙ 광주과학기술원 인공지능연구소 담당자 e-mail
+                    <font style="color: red; font-weight: bold"> info@giai.kr </font>
+                    <font style="color: blue">(e-mail only) </font><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab panes 2222222222222222222222222-->
     </section>
     <!-- 교육종료 -->
     <!-- 교육종료 -->
