@@ -2653,6 +2653,7 @@ ol {
   .trending-news-section .tn-title {
     /* display: none; */
     height: 50px;
+    line-height: 100%;
   }
   .trending-news-section .news-slider.owl-carousel .owl-nav {
     display: none;
