@@ -175,7 +175,50 @@
       </div>
     </section>
     <!-- Blog Details Hero Section End -->
+    <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="main-menu2" style="text-align: center">
+      <div class="trending-news-section">
+        <div class="container">
+          <div class="tn-title">
+            <a href="#hyper1" style="color: white"> <i class="fa fa-caret-right"></i> 개요</a>
+            &nbsp;&nbsp;<a style="color: white" href="#hyper2">
+              <i class="fa fa-caret-right"></i>
+              문제소개</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#hyper3"> <i class="fa fa-caret-right"></i> FAQ</a
+            >&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //상대적인 좌표 값을 반환, .offset()가 반환 하는 객체는 left와 top 속성을 제공
 
+        //top 속성을 이용해서 메뉴의 수직 위치를 구함
+
+        var menu_offset = $(".main-menu2").offset()
+
+        //스크롤 바를 스크롤할 때 매개변수로 전달된 함수를 실행시킴
+
+        $(window).scroll(function () {
+          //문서의 스크롤바 위치와 메뉴의 수직 위치를 비교해서
+
+          //문서의 스크롤바 위치가 메뉴의 수직 위치보다 크면(위치로 표현하면 아래)
+
+          if ($(document).scrollTop() > menu_offset.top) {
+            //메뉴에 menu-fixed 클래스를 추가해서 메뉴를 고정시킴
+
+            $(".main-menu2").addClass("menu-fixed")
+          } else {
+            //메뉴에서 menu-fized 클래스를 제거해서 메뉴를 수직으로 이동할 수 있도록 처리함
+
+            $(".main-menu2").removeClass("menu-fixed")
+          }
+        })
+      })
+    </script>
   <!-- 교육시작 -->
   <section class="club-section spad">
     <div class="container">
@@ -207,7 +250,7 @@
               </li>
             </ul> -->
             <!-- Tab panes 2222222222222222222222222-->
-            <div class="container text-justify">
+            <div class="container text-justify" id="hyper1">
               <div class="row col-12 mb-5 mt-5  justify-content-center">
                 <div class="col-md-8 text-center">
                   <h2 class="section-title mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="" style="
@@ -219,7 +262,7 @@
                   <p>
                     <b style="font-size: 1.3em">00. 소개</b><br><br>
                     
-                     가. “2020 GIST-NVIDIA 꿈꾸는아이(AI) 헬스케어 해커톤(이하 헬스케어 해커톤)”은 AI기술을 활용하여 COVID-19와 같은 바이러스 확산을 예측, 최소화 및 차단하는데 도움이 되기 위한 문제를 GIST-NVIDIA에서 출제하였으며, 본 헬스케어 해커톤을 통하여 관련 솔루션을 발굴하기 위한 목적으로 진행합니다.   <br>
+                    ∙ “2020 GIST-NVIDIA 꿈꾸는아이(AI) 헬스케어 해커톤(이하 헬스케어 해커톤)”은 AI기술을 활용하여 COVID-19와 같은 바이러스 확산을 예측, 최소화 및 차단하는데 도움이 되기 위한 문제를 GIST-NVIDIA에서 출제하였으며, 본 헬스케어 해커톤을 통하여 관련 솔루션을 발굴하기 위한 목적으로 진행합니다.   <br>
                      <br><br>
                     <b style="font-size: 1.3em"> 01. 헬스케어 해커톤 참가 신청 방법</b><br><br>
                     가. 경진대회 참가동의 및 개인정보 수집/이용 동의서(클릭)를 작성해 주시기 바랍니다.<br>
@@ -272,7 +315,7 @@
               </div>
             </div>
 <!-- Tab panes 2222222222222222222222222-->
-<div class="container text-justify">
+<div class="container text-justify" id="hyper2">
 <div class="row col-12 mb-5 mt-5  justify-content-center">
 <div class="col-md-8 text-center">
 <h2 class="section-title mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="" style="
@@ -368,7 +411,7 @@ font-size: 24px;
 </div>
 </div>
 <!-- Tab panes 2222222222222222222222222-->
-<div class="container text-justify">
+<div class="container text-justify" id="hyper3">
 <div class="row col-12 mb-5 mt-5  justify-content-center">
 <div class="col-md-8 text-center">
 <h2 class="section-title mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="" style="

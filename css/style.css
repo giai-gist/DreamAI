@@ -52,6 +52,13 @@ h6 {
   font-family: "NanumSquare", "Roboto", sans-serif;
 }
 
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 h1 {
   font-size: 70px;
 }
