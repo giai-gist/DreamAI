@@ -34,6 +34,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   font-family: "NanumSquare", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
