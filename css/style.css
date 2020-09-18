@@ -2392,6 +2392,22 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+  .breadcrumb-section .bs-text h2 {
+    font-size: 19px;
+  }
+
+  .mobile-gist {
+    font-size: 15px !important;
+  }
+
+  .blog-hero-section .bh-text h2 {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 18px;
+  }
+
   .mainlogo {
     background-size: 147%;
   }
@@ -2722,7 +2738,7 @@ ol {
     padding-left: 5%;
   }
   .breadcrumb-section .bs-text h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
   .blog-hero-section .bh-text h2 {
     font-size: 28px;
