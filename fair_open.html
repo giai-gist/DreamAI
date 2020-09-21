@@ -174,7 +174,51 @@
       </div>
     </section>
     <!-- Blog Details Hero Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="main-menu2" style="text-align: center">
+      <div class="trending-news-section">
+        <div class="container">
+          <div class="tn-title">
+            <a href="#GIAI1" style="color: white"> <i class="fa fa-caret-right"></i> 개요</a>
+            &nbsp;&nbsp;<a style="color: white" href="#GIAI2">
+              <i class="fa fa-caret-right"></i>
+              문제소개</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI3"> <i class="fa fa-caret-right"></i> FAQ</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI0"> <i class="fa fa-caret-right"></i> 신청하기</a
+            >&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //상대적인 좌표 값을 반환, .offset()가 반환 하는 객체는 left와 top 속성을 제공
 
+        //top 속성을 이용해서 메뉴의 수직 위치를 구함
+
+        var menu_offset = $(".main-menu2").offset()
+
+        //스크롤 바를 스크롤할 때 매개변수로 전달된 함수를 실행시킴
+
+        $(window).scroll(function () {
+          //문서의 스크롤바 위치와 메뉴의 수직 위치를 비교해서
+
+          //문서의 스크롤바 위치가 메뉴의 수직 위치보다 크면(위치로 표현하면 아래)
+
+          if ($(document).scrollTop() > menu_offset.top) {
+            //메뉴에 menu-fixed 클래스를 추가해서 메뉴를 고정시킴
+
+            $(".main-menu2").addClass("menu-fixed")
+          } else {
+            //메뉴에서 menu-fized 클래스를 제거해서 메뉴를 수직으로 이동할 수 있도록 처리함
+
+            $(".main-menu2").removeClass("menu-fixed")
+          }
+        })
+      })
+    </script>
     <!-- Blog Details Section Begin -->
     <section class="blog-details-section spad">
       <div class="container">
