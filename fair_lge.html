@@ -159,14 +159,24 @@
     <!-- Header End -->
 
     <!-- Blog Details Hero Section Begin -->
-    <section class="blog-hero-section set-bg" data-setbg="img/blog/details/details-hero5.jpg">
+    <section class="blog-hero-section set-bg" data-setbg="img/blog/details/details-hero.jpg">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="bh-text">
               <h2 style="text-shadow: 1px 3px 5px black">
-                <font style="font-size: 25px">꿈꾸는아이 경진대회 시즌 1 - </font><br />2020
-                GIST-LGE DREAM_AI ThinQ Hackathon
+                <font style="font-size: 25px"
+                  ><img
+                    src="img/AI_icon_white_small.png"
+                    alt=""
+                    style="width: 27px; top: -4px; position: relative"
+                  />꿈꾸는아이 경진대회 시즌 1 - </font
+                ><br />2020 GIST-LGE DREAM_AI ThinQ Hackathon<br />
+                <div style="text-align: center; font-size: 20px">
+                  <img src="img/gist-logo-1.png" alt="" style="width: 24px" /> 광주과학기술원
+                  <img src="img/22.png" alt="" style="width: 45px" /> 인공지능연구소
+                  <img src="img/lg_logo.PNG" alt="" style="width: 45px" /> LGE
+                </div>
               </h2>
             </div>
           </div>
@@ -176,32 +186,251 @@
     <!-- Blog Details Hero Section End -->
 
     <!-- Blog Details Section Begin -->
-    <section class="blog-details-section spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" style="text-align: center">
-            <br /><br />
-            <img src="img/error.png" alt="" style="width: 5%" /> <br /><br />
-            <br />
-            <p>2020 GIST-LGE DREAM_AI ThinQ Hackathon는 준비중에 있습니다.</p>
-            <br />
-            <br />
+    <!-- 교육시작 -->
+    <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="main-menu2" style="text-align: center">
+      <div class="trending-news-section">
+        <div class="container">
+          <div class="tn-title">
+            <a href="#GIAI1" style="color: white"> <i class="fa fa-caret-right"></i> 개요</a>
+            &nbsp;&nbsp;<a style="color: white" href="#GIAI2">
+              <i class="fa fa-caret-right"></i>
+              문제소개</a
+            ><!--&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI3"> <i class="fa fa-caret-right"></i> FAQ</a
+            >&nbsp;&nbsp;
+            <a style="color: white" href="#GIAI0"> <i class="fa fa-caret-right"></i> 신청하기</a
+            >&nbsp;&nbsp; -->
           </div>
         </div>
       </div>
-    </section>
-    <!-- Blog Details Section End -->
-
-    <!-- Search model Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="fa fa-close"></i></div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
     </div>
-    <!-- Search model end -->
+    <script>
+      $(document).ready(function () {
+        //상대적인 좌표 값을 반환, .offset()가 반환 하는 객체는 left와 top 속성을 제공
+
+        //top 속성을 이용해서 메뉴의 수직 위치를 구함
+
+        var menu_offset = $(".main-menu2").offset()
+
+        //스크롤 바를 스크롤할 때 매개변수로 전달된 함수를 실행시킴
+
+        $(window).scroll(function () {
+          //문서의 스크롤바 위치와 메뉴의 수직 위치를 비교해서
+
+          //문서의 스크롤바 위치가 메뉴의 수직 위치보다 크면(위치로 표현하면 아래)
+
+          if ($(document).scrollTop() > menu_offset.top) {
+            //메뉴에 menu-fixed 클래스를 추가해서 메뉴를 고정시킴
+
+            $(".main-menu2").addClass("menu-fixed")
+          } else {
+            //메뉴에서 menu-fized 클래스를 제거해서 메뉴를 수직으로 이동할 수 있도록 처리함
+
+            $(".main-menu2").removeClass("menu-fixed")
+          }
+        })
+      })
+    </script>
+    <!-- 교육시작 -->
+    <section class="club-section spad">
+      <div class="container">
+        <div class="club-tab-list">
+          <div class="row">
+            <br />
+            <div style="text-align: center; margin-left: auto; margin-right: auto">
+              <a href="/fair#notice"
+                ><p style="color: red; background-color: #fff8dcc2">
+                  "경진대회 내용 및 공지사항을 충분히 숙지하신 후에, 종목 참가신청을 해 주시기
+                  바랍니다." <img src="img/click.png" alt="click" style="width: 23px" /></p
+              ></a>
+            </div>
+            <br />
+
+            <!-- 
+           <ul class="nav nav-tabs" role="tablist">
+             <li class="nav-item">
+               <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">안내</a >
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">접수방법</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">문제소개</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">FAQ</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#tabs-111">ENG</a>
+             </li>
+           </ul> -->
+            <!-- Tab panes 2222222222222222222222222-->
+            <div class="container text-justify" id="GIAI1">
+              <div class="row col-12 mb-5 mt-5 justify-content-center">
+                <div class="col-md-8 text-center">
+                  <h2
+                    class="section-title mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay=""
+                    style="font-size: 24px"
+                  >
+                    2020 GIST-LGE DREAM_AI ThinQ Hackathon
+                  </h2>
+                  <h3
+                    class="section-title-sub mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  ></h3>
+                </div>
+                <div
+                  class="col-12 ml-auto text-justify aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    <b style="font-size: 1.3em">00. 소개</b><br /><br />
+
+                    📌 “2020 GIST-LGE DREAM_AI ThinQ Hackathon(이하 씽큐 해커톤)”은 LG전자 제품에
+                    활용할 수 있는 얼굴인식과 음성인식 문제를 GIST-LGE에서 출제하였으며, 본 씽큐
+                    해커톤을 통하여 관련 솔루션을 발굴하기 위한 목적으로 진행합니다. <br />
+                    <br /><br />
+                    <b style="font-size: 1.3em">01. 참가신청 안내</b><br /><br />
+                    가. 다음 2가지 문제 중에서 원하는 하나의 문제를 선택하여 진행합니다. <br />
+                  </p>
+                  <table
+                    style="width: 15; font-size: 19px; margin-left: auto; margin-right: auto"
+                    id="GIAI2"
+                  >
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            padding: 10px;
+                            border-bottom: 1px solid #444444;
+                            border-right: #444444 1px solid;
+                          "
+                        >
+                          1번
+                        </td>
+                        <td style="padding: 10px; border-bottom: 1px solid #444444">
+                          <a href="#GIAI11" style="color: black"
+                            >얼굴인식 가전 제품 및 가상 비서
+                            <img src="img/click.png" alt="click" style="width: 23px"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border-right: #444444 1px solid">2번</td>
+                        <td style="padding: 10px">
+                          <a href="#GIAI22" style="color: black"
+                            >새로운 음식을 인식하는 냉장고
+                            <img src="img/click.png" alt="click" style="width: 23px"
+                          /></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br />
+                  <p>
+                    나. 씽큐 해커톤
+                    <b
+                      ><font style="color: red"
+                        >참가신청서 제출마감은 10월9일(금) 24시 정각</font
+                      ></b
+                    >까지입니다. <br />
+                    다. 씽큐 해커톤 상세 일정과 참가신청서 접수방법은 금주 중으로(~9월25일) 업데이트
+                    할 예정입니다. <br />본 홈페이지를 통해 업데이트 되는 내용을 확인해 주시기
+                    바랍니다.<br /><br />
+
+                    <br />
+                    <b style="font-size: 1.3em"> 02. 참가신청 및 기타 문의 <br /></b><br />
+                    ∙ 광주과학기술원 인공지능연구소 담당자 e-mail
+                    <font style="color: red; font-weight: bold"> info@giai.kr </font>
+                    <font style="color: blue">(e-mail only) </font><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container text-justify" id="GIAI1">
+              <div class="row col-12 mb-5 mt-5 justify-content-center">
+                <div class="col-md-8 text-center">
+                  <h2
+                    class="section-title mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay=""
+                    style="font-size: 24px"
+                  >
+                    문제 소개
+                  </h2>
+                  <h3
+                    class="section-title-sub mb-3 aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  ></h3>
+                </div>
+                <div
+                  class="col-12 ml-auto text-justify aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    <b style="font-size: 1.3em" id="GIAI11">Q1: 얼굴인식 가전 제품 및 가상 비서</b
+                    ><br /><br />
+
+                    - 사람의 얼굴을 인식하여 개인화 서비스 등을 제공하고자 하는 인공지능 제품과
+                    사람을 얼굴을 가상으로 시뮬레이션하여 얼굴인식 서비스에 대한 방해 공격이
+                    가능하기 때문에, 두 기술을 동시에 확보할 수 있는 방법으로 기술 간의 경쟁을
+                    시도해 보고자 함. <br />
+                    - 사람의 얼굴을 Fake로 생성하는 기술과 Fake로 생성된 사람의 얼굴을 구별하는
+                    기술을 경쟁시켜서 이기는 쪽이 살아남도록 함. <br />
+                    - 인터넷 상에 오픈되어 있는 데이터들을 활용해서 기술 개발 후 참여 가능함. <br />
+                    <br /><br />
+                    <b style="font-size: 1.3em" id="GIAI22">Q2: 새로운 음식을 인식하는 냉장고</b
+                    ><br /><br />
+                    - 현재 일반적인 음성 에이전트는 특정 태스크를 수행하기 위해 설계된 의도만을
+                    이해하도록 개발되었기 때문에 학습되지 않은 표현에 대해서는 Unknown으로 처리하는
+                    한계를 보임. 하지만, 고객은 학습되지 않은 표현에 대해서도 대화를 이어갈 수 있는
+                    수준의 Open-domain 챗봇 기능을 원함.<br />
+                    - 국립국어원의 ‘모두의 말뭉치’ 코퍼스를 학습하여 일상적인 대화를 주고 받을 수
+                    있는 챗봇을 개발함. 생성 기반 챗봇을 위한 Seq2Seq 알고리즘을 기반으로 개발하는
+                    것을 권장함.<br />
+                    <br />
+                    - 데이터 <br />
+                    &nbsp;&nbsp;&nbsp;1) 학습 데이터 : 국립 국어원 ‘모두의 말뭉치’, 총 13개 말뭉치
+                    모두 사용 가능함.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                      href="https://corpus.korean.go.kr/main.do"
+                      >(https://corpus.korean.go.kr/main.do)</a
+                    >
+                    <br />
+                    &nbsp;&nbsp;&nbsp;2) 추가 데이터 학습 가능하나, 별도 태스크로 평가 <br />
+                    &nbsp;&nbsp;&nbsp;3) 테스트 데이터 : 추후 공개(도메인 제한 없는 질문/응답
+                    문장들) <br />
+                    <br />
+                    - 평가지표 <br />
+                    &nbsp;&nbsp;&nbsp;1) 주어진 첫 번째 발화 입력 이후, 챗봇이 생성한 대화 문장에
+                    대한 평가 <br />
+                    &nbsp;&nbsp;① 문법 점수(0 / 1 점), 적합성 점수(0 / 1 / 2 점) &nbsp;&nbsp;②
+                    챗봇이 생성한 대화 문장에 대해서 10명 이상의 평가결과를 취합하여 MOS(Mean
+                    Opinion Score)를 구함. <br />
+                    &nbsp;&nbsp;&nbsp;2) 챗봇이 연속해서 대화하는 지속 시간 <br />
+                    <br />
+                    - 산출물<br />
+                    &nbsp;&nbsp;&nbsp;1) 알고리즘 구조에 대한 설명서(자유 양식)
+                    <br />&nbsp;&nbsp;&nbsp;2) 챗봇 입출력 인터페이스 명세서 및 테스트 프로그램
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab panes 2222222222222222222222222-->
+    </section>
+    <!-- 교육종료 -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
