@@ -2468,7 +2468,6 @@ ol {
   }
   .offcanvas-menu-wrapper {
     position: fixed;
-    left: -300px;
     top: 0;
     width: 300px;
     z-index: 999;
@@ -2485,7 +2484,7 @@ ol {
     display: block;
   }
   .offcanvas-menu-wrapper.show-offcanvas-menu-wrapper {
-    left: 0;
+    right: 0;
     opacity: 1;
     visibility: visible;
   }
