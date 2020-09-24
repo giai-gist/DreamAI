@@ -387,24 +387,23 @@
                     이 트랙은 일대일 경주를 위한 모델을 훈련하고 대회를 진행하기 위해
                     제작되었습니다. <br />
                   </p>
-                  <div style="text-align: center">
-                    <img src="img/gifgit.gif" alt="" />
-                    <div style="display: inline-block">
-                      <p>
-                        순위 산정 : 총 시간 합산 <br />
-                        레이스 스타일 : 연속 <br />
-                        총 랩수 : 3랩 <br />
-                        오프 트랙 재설정 : 무제한 <br />
-                        오프 트랙 재설정 패널티 : 5 초 <br />
-                      </p>
-                    </div>
+                  <table style="margin: auto">
+                    <tr>
+                      <td><img src="img/gifgit.gif" alt="" /></td>
+                      <td><p>&nbsp; 순위 산정: 총 시간 합산 <br>
+                        &nbsp; 레이스 스타일: 연속 <br>
+                        &nbsp; 총 랩수: 3랩 <br>
+                        &nbsp; 오프 트랙 재설정: 무제한 <br>
+                        &nbsp; 오프 트랙 재설정 패널티: 5 초 </p><br></td>
+                    </tr>
+                  </table>
                     <br /><br /><br />
                     <p style="text-align: left">
                       <b style="font-size: 1.3em">∙ 제공되는 차량 및 사전 교육</b><br /><br />
-                      가. DeepRacer : 실제 자동차의 1/18 크기로 제작된 자율주행 레이싱 카로, 인텔
+                      가. DeepRacer: 실제 자동차의 1/18 크기로 제작된 자율주행 레이싱 카로, 인텔
                       Atom 프로세서와 트랙을 확인할 수 잇는 400만 화소 카메라를 탑재했으며, Ubuntu
                       OS와 인텔의 컴퓨터 비전 솔루션인 Open VINO 툴킷을 지원합니다.<br /><br />
-                      나. 제공되는 사전 교육 주최측에서는 2020 GIST-AWS DREAM_AI DeepRacer
+                      나. 사전 교육: 주최측에서는 2020 GIST-AWS DREAM_AI DeepRacer
                       Competition 참가자들의 경쟁력을 위해 AWS DeepRacer에서 모델을 구축, 훈련 및
                       배포하는 사전 교육을 준비 하였습니다. 이 사전 교육은 강화 학습 (RL)에 대한
                       실무 경험을 체험 할 수 있도록 설계되었습니다. <br />
@@ -482,6 +481,10 @@
                             <td><b>센서</b></td>
                             <td>통합 가속도계 및 자이로스코프</td>
                           </tr>
+                          <tr>
+                            <td style="padding: 50px;"></td>
+                            <td></td>
+                          </tr>
                         </tbody>
                       </table>
                       <br><br><br><br>
@@ -504,7 +507,7 @@
                 <div class="col-12 ml-auto text-justify aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                   <p>
                     <b style="font-size: 1.3em"> 1. 등록 관련</b><br><br>
-                    <mark><b>Q. Q: AWS DeepRacer 시뮬레이터를 시작하려면 어떻게 해야 합니까? <br></b></mark>
+                    <mark><b>Q. AWS DeepRacer 시뮬레이터를 시작하려면 어떻게 해야 합니까? <br></b></mark>
                     A. 참가팀 선정 후 사전교육이 진행됩니다. 사전교육시 AWS DeepRacer 시뮬레이터 사용방법, AWS DeepRacer 차량 사용방법등을 배우실 수 있습니다.<br>
                       <br>
                       <mark><b>Q. 경주에 참가하려면 모델을 직접 구축해야 합니까? <br></b></mark>
@@ -521,7 +524,9 @@
                     <br><mark><b>Q. AWS DeepRacer RL 모델을 Amazon SageMaker에서 직접 훈련할 수 있습니까? <br></b></mark>
                     A. 예. AWS DeepRacer Distributed Training SageMaker Notebook을 사용하여 RL 모델을 생성하고 훈련할 수 있습니다. 이러한 모델을 수동으로 AWS DeepRacer에는 배포할 수 있지만, 아직 AWS DeepRacer 콘솔로 가져올 수는 없습니다.  <br>  
                     <br><br><br>
-                   
+                    <참고사이트> <br>
+                    <a href="https://aws.amazon.com/ko/deepracer/faqs/"> AWS DeepRacer FAQ </a><br>
+                    <a href="https://docs.aws.amazon.com/deepracer/latest/developerguide/what-is-deepracer.html"> AWS DeepRacer Developer Guide </a>
                   <br><br><br>
                   
                   </div>
@@ -553,9 +558,7 @@
                     >
                     <br>
                     <br><br><br><br><br>
-                    <참고사이트> <br>
-<a href="https://aws.amazon.com/ko/deepracer/faqs/"> AWS DeepRacer FAQ </a><br>
-<a href="https://docs.aws.amazon.com/deepracer/latest/developerguide/what-is-deepracer.html"> AWS DeepRacer Developer Guide </a>
+
                   </div>
                 </div>
               </div>
