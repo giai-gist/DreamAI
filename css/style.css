@@ -2686,7 +2686,16 @@ ol {
     font-size: 16px;
     color: white;
   }
-
+  .button-R {
+    position: absolute;
+    width: 45%;
+    left: 0%;
+  }
+  .button-L {
+    position: absolute;
+    width: 45%;
+    right: 0%;
+  }
   .button-3d {
     position: absolute;
     right: 1%;
