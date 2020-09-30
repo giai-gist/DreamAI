@@ -308,7 +308,7 @@
                         </td>
                         <td style="padding: 10px; border-bottom: 1px solid #444444">
                           <a href="#GIAI11" style="color: black">
-                            전력 수요 예측
+                            드라마 배경음악 자동 생성/탐색
                             <img src="img/click.png" alt="click" style="width: 23px"
                           /></a>
                         </td>
@@ -325,7 +325,7 @@
                         </td>
                         <td style="padding: 10px; border-bottom: 1px solid #444444">
                           <a href="#GIAI22" style="color: black">
-                            드라마 배경음악 자동 생성/탐색
+                            전력 수요 예측
                             <img src="img/click.png" alt="click" style="width: 23px"
                           /></a>
                         </td>
@@ -430,7 +430,7 @@
                     &nbsp;&nbsp;2) 과제를 수행하면서 제안하고 싶은 아이디어가 있다면 기술 -->
                     <br />
                     <br /><br /><br /><br />
-                    <b style="font-size: 1.3em" id="GIAI22">Q2: 드라마 배경음악 자동 생성/탐색</b
+                    <b style="font-size: 1.3em" id="GIAI11">Q1: 드라마 배경음악 자동 생성/탐색</b
                     ><br /><br />
                     - 드라마 1편에는 약 10~20여개의 배경음악이 사용되고 있습니다. 모든 드라마에는
                     음악감독이 있어서 배경음악을 삽입하고 있지만, 모든 배경음악을 다 작곡하기는
@@ -447,6 +447,27 @@
                     &nbsp;&nbsp;2) 음악 파일은 mid 형식으로 출력 <br />
                     <br />
                     <br /><br /><br /><br />
+                    <b style="font-size: 1.3em" id="GIAI22">Q2: 전력수요 예측</b
+                      ><br /><br />
+                      - 기존 전력 사용 기록과 기상 데이터 등 공공 데이터를 이용하여 각 가정 및 회사의 시간별, 일별, 월별 전력 사용량을 예측합니다. 2018년 7월1일부터 2018년 11월 30일까지의 에너지 사용량을 예측합니다.<br />
+                      <br />
+                      [제공 데이터]<br />
+                      1. train.csv<br />
+                      - 산출물 <br />
+                      &nbsp;&nbsp;- 국내(인천지역) 특정 지역의 모 아파트 및 모 상가의 전력사용량 (1300호) <br>
+                      &nbsp;&nbsp;- 2016년 7월 26일 11시 ~ 2018년 6월 30일 24시까지 시간 당 전력사용량 <br><br>
+                    2. test.csv <br>
+                      &nbsp;&nbsp;- 국내(인천지역) 특정 지역의 모 아파트 및 모 상가의 전력사용량 (200호)<br>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;(※ train의 세대와 다른 세대)<br>
+                      &nbsp;&nbsp;- 2017년 7월 1일 00시 ~ 2018년 6월 30일 24시까지 시간 당 전력사용량<br><br>
+                    [결과물]<br>
+                    - 2018년 7월 1일 00시부터 24시까지, 24시간 ‘시간당 전력사용량’ (24개)<br>
+                    - 2018년 7월1일부터 7월10일까지, 10일간 ‘일간 전력사용량’ (10개)<br>
+                    - 2018년 7월부터 11월까지, 5개월간 ‘월간 전력사용량’ (5개)<br>
+                    - 학습 데이터셋과 함께 제공되는 submission.csv 양식에 맞춰 제출<br>
+                      <br />
+                      <br /><br /><br /><br />
+
                     <b style="font-size: 1.3em" id="GIAI33">Q3: 가상 피팅(Virtual fitting)</b
                     ><br /><br />
                     - 코로나 바이러스가 쉽게 수그러들지 않으면서 온라인으로 의류를 구매하는 고객은
