@@ -6,6 +6,18 @@
     <meta name="keywords" content="DreamAI, GIST, GIST AI, DreamAI fair" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3a4288" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178402265-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-178402265-1")
+    </script>
+
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/giai-gist/DreamAI/gh-pages/img/LO.png"
@@ -45,16 +57,13 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178402265-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-178402265-1');
-</script>
-
+    <style>
+      @media only screen and (max-width: 991px) {
+        td {
+          font-size: 11px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -68,9 +77,9 @@
       </div>
       <ul class="main-menu mobile-menu">
         <li>
-          <a href="/"><img src="img/home-run.png" alt=""  style="width: 20px;"></a>
+          <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
         </li>
-        <li class="active"><a href="./About">소개</a></li>
+        <li><a href="./About">소개</a></li>
         <li>
           <a href="./fair">AI경진대회</a>
           <ul class="dropdown">
@@ -82,7 +91,8 @@
           </ul>
         </li>
         <li><a href="./school">AI기술창업교육</a></li>
-        <li><a href="./foundation">사업기반 인프라 구축</a></li>
+        <li><a href="./meetup">창업 및 기업지원</a></li>
+        <li class="active"><a href="./foundation">사업기반 인프라 구축</a></li>
         <li><a href="./voc">문의하기</a></li>
         <!-- <li><a href="#">meet up</a></li> -->
       </ul>
@@ -114,9 +124,8 @@
                 ><br />
                 <p style="font-size: 6px; color: white; position: absolute; top: 74px">
                   인공지능산업융합사업단 |
-                  <img src="img/logo3.png" alt="" style="width: 20px;margin-bottom: 1px;" />
-                  <font style="color: #bb1c1c">G</font>IST
-                   인공지능연구소
+                  <img src="img/logo3.png" alt="" style="width: 20px; margin-bottom: 1px" />
+                  <font style="color: #bb1c1c">G</font>IST 인공지능연구소
                 </p>
               </div>
             </div>
@@ -124,9 +133,9 @@
               <div class="nav-menu">
                 <ul class="main-menu">
                   <li>
-                    <a href="/"><img src="img/home-run.png" alt=""  style="width: 20px;"></a>
+                    <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
                   </li>
-                  <li class="active"><a href="./About">소개</a></li>
+                  <li><a href="./About">소개</a></li>
                   <li>
                     <a href="./fair">AI경진대회</a>
                     <ul class="dropdown">
@@ -141,8 +150,11 @@
                       <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
                     </ul>
                   </li>
-                  <li><a href="./school">AI기술창업교육</a></li>
-                  <li><a href="./foundation">사업기반 인프라 구축</a></li>
+                  <li>
+                    <a href="./school">AI기술창업교육</a>
+                  </li>
+                  <li><a href="./meetup">창업 및 기업지원</a></li>
+                  <li class="active"><a href="./foundation">사업기반 인프라 구축</a></li>
                   <li><a href="./voc">문의하기</a></li>
                   <!-- <li><a href="#">meet up</a></li> -->
                 </ul>
@@ -158,23 +170,32 @@
     <!-- Header End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" style="background-color: #3a4288;">
+    <section class="breadcrumb-section set-bg" style="background-color: #3a4288">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="bs-text">
-              <h2 style="text-shadow: 0px 0px 0px black;"><img src="img/AI_icon_white_small.png" alt="" style="width: 51px;POSITION: relative;TOP: -5PX;">꿈꾸는아이</h2>
+              <h2 style="text-shadow: 0px 0px 0px black">
+                <img
+                  src="img/AI_icon_white_small.png"
+                  alt=""
+                  style="width: 53px; top: -6px; position: relative"
+                />
+                사업기반 인프라 구축 (DREAM Foundation)
+ <br />
+              </h2>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Club Section Begin -->
+    <!-- Results Section Begin -->
     <section class="schedule-section spad">
       <div class="container">
-        <div class="row" id="hyper1">
+        <div class="row" id="GIAI1">
           <!-- <div
             class="col-12 ml-auto text-justify aos-init aos-animate"
             data-aos="fade-up"
@@ -212,6 +233,7 @@
             </p>
             </p>
           </div> -->
+          <div style="text-align: center;" class="col-12"></div>
           <div class="row col-12 mb-5 mt-5 justify-content-center">
             <div class="col-md-8 text-center">
               <h2
@@ -219,7 +241,8 @@
                 data-aos="fade-up"
                 data-aos-delay=""
               >
-                소개
+              DREAM Foundation
+
               </h2>
             </div>
             <div
@@ -228,31 +251,33 @@
               data-aos-delay="100"
             >
               <p>
-                광주광역시에서 추진하는 「인공지능중심산업융합집적단지조성사업」은 세계적 수준의 인공지능연구개발, 기업 및 창업을 육성하여, AI 4대 강국으로 도약하고자 합니다. 이를 위하여 인프라 구축, 연구개발(R&D), 인공지능 창업지원을 통해 인공지능 생태계를 조성하여 지역 주력산업의 경쟁력 제고를 목표로 하고 있습니다. <br>
                 <br>
-                AI 시대의 도래로 무한한 기회가 창출되고 있어, 많은 사람들은 AI를 활용해 사업기회를 구체화하는 기회를 꿈꾸고 있습니다. 꿈꾸는아이는 AI 기술을 활용해 꿈을 꾸고 실현할 수 있는 ‘즐거운 놀이터’를 조성하고, AI 창업을 꿈꾸는 예비창업가의 꿈을 펼칠 수 있도록 도움을 주고자 합니다. <br>
-                <br>
-                꿈꾸는아이는 「인공지능중심산업융합집적단지조성사업(창업분야)」의 “수요 연계형 AI 예비창업 지원(Stand up)사업”으로 과학기술정보통신부, 광주광역시, 정보통신산업진흥원(NIPA) 협력 하에 인공지능산업융합사업단이 주관하고 지스트 인공지능연구소가 수행하고 있습니다. <br><br>
-                
-                꿈꾸는아이가 진행하는 사업은 사업 아이템 발굴과 구체화, AI기술창업교육, AI경진대회, 창업컨설팅 및 수요처 연계 등을 순차적으로 수행하면서 아이디어 형성 단계(Stand-Up 단계)의 예비창업자를 지원‧육성하고 합니다. <br>
-                AI기술창업교육 프로그램은 D.A.M.(Data, AI, Management for X) 유형별로 설계하고 3EX(Experience, Exercise, Expert) 단계별로 구분하여 개인의 역량에 맞춘 실증지향의 AI기술창업교육입니다. <br>
-                꿈꾸는아이 경진대회는 인공지능산업융합 3대 특화분야인 자동차‧에너지‧헬스케어를 포함하는 주요 신성장 동력 산업현장의 현안과 난제들을 AI기술로 해결하는 능력을 평가하고 창업아이템을 검증받을 수 있는 기회의 장이 될 것입니다. 예비창업자들은 실무현장의 플랫폼과 데이터를 직접 만지고 경험할 수 있고, 참여기업들은 기업이 가진 현안문제들에 대한 창의적인 아이디어와 해결방법 확보를 도모할 것으로 기대됩니다. <br>
-                꿈꾸는아이 교육‧경진에 참여하는 예비창업자는 국내외 AI 전문기업과의 네트워킹을 포함한 AI 전문가 컨설팅을 받으면서 창업을 준비하며 꿈을 실현할 수 있는 매우 특별한 기회가 될 것입니다.<br>
-                <br>
-                어린 아이가 자신의 힘으로 일어서는 Stand-Up을 위하여 기업들은 실질적인 문제를 제시하고, 꿈꾸는아이 교육‧경진 참가자들은 이 문제를 AI와 접목시켜 창의적인 해결책을 모색하면서 다양한 창업 아이디어들을 교류할 수 있습니다. <br>
-                AI 산업과 창업에 관심 있는 일반 시민부터 다른 분야의 전문성을 지닌 모두에게 AI를 더욱 가깝게 느끼고 흥미를 유발하여 누구나 참여 가능한 AI 기술 활용의 문턱을 낮추고자 합니다. 교육‧경진대회를 통해 AI를 이해하고 데이터를 제어할 수 있는 능력을 제공하고 역량을 함양할 수 있도록 노력을 다하겠습니다. <br>
-                
-                
-                </p>
+                ∙ GIST 인공지능연구소는 교육생과 예비창업자에게 AI Studio를 제공합니다. AI Studio에서는 AI 전문교육과 경진대회가 진행되며, 교육과 실습에 필요한 모든 장비가 구축되어 있습니다. 인공지능연구소는 AI Studio를 제공함으로써, AI에 관심 있는 예비창업자와 시민들, 그리고 예비창업자와 참여기관이 함께 협력하여 꿈을 이룰 수 있는 AI 복합 문화 공간을 제공하고자 합니다. 
+              </p><br>
+              <div style="text-align: center"><img src="img/foundation00.png" style="width: 60%;" alt="" /><br>< 광주과학기술원 교육연구지원동(S7) 1층 AI Studio ></div>
+                <br><br><br>
+                <div style="text-align: center"><img src="img/foundation01.png" style="width: 60%;" alt="" /><br>< 사업기반 구축 개념도 : 교육장비 구성도 ></div>
+                  <p>
+                <br><br><br><b style="font-size: 1.3em">□ 개요</b><br /><br />
+                - AI 전문 교육과 경진대회를 제공할 수 있는 교육 실습장 및 관련 인프라 구축<br>
+- 현장 문제를 직접 체험하고 해결할 수 있는 경험과 학습을 위한 교육장 및 교육장비 등 모든 인프라 구축<br>
+- 예비창업자와 참여기관이 함께 협력할 수 있는 접점을 마련하고 다양한 프로그램을 통해 네트워킹의 기회 제공<br>
+- 예비창업자가 열린 공간에서 자유롭게 소통·교류하며 성장할 수 있는 인프라 구축 및 AI복합문화공간 조성<br>
+<br><br><br><b style="font-size: 1.3em">□ 기대효과</b><br /><br />
+- 데이터와 AI 플랫폼, 비즈니스 기회를 경험하고 체험할 수 있는 공간 조성<br>
+- 인공지능에 대한 일반시민의 공감대 및 관심 증대 <br>
+- 인공지능 관련 기업 간, 인력 간 매칭을 통한 시너지 효과 창출<br>
+- 인공지능에 관심 있는 학생 및 일반 시민 대상 맞춤형 교육 제공을 통한 AI‧데이터 관련 예비 창업자 육성 <br>
+              </p>
+
+              
             </div>
           </div>
-
         </div>
       </div>
     </section>
+    <!-- Results Section End -->
 
-    <!-- Club Section End -->
-    
     <!-- Footer Section Begin -->
     <footer class="footer-section set-bg" style="background-color: black">
       <div class="container">
@@ -300,17 +325,6 @@
       </div>
     </footer>
     <!-- Footer Section End -->
-
-    <!-- Search model Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="fa fa-close"></i></div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
-    </div>
-    <!-- Search model end -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
