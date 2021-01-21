@@ -1,9 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="refresh" content="1; url='https://gistvdi.maymust.co.kr/'" />
+    <meta name="description" content="꿈꾸는아이" />
+    <meta name="keywords" content="DreamAI, GIST, GIST AI, DreamAI fair" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3a4288" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178402265-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-178402265-1")
+    </script>
+
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/giai-gist/DreamAI/gh-pages/img/LO.png"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>꿈꾸는아이</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <style>
+      /* IE10+ */
+      @font-face {
+        font-family: "BMDOHYEON";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      @media only screen and (max-width: 991px) {
+        td {
+          font-size: 11px;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <p>Please follow <a href="https://gistvdi.maymust.co.kr/">this link</a>.</p>
+    <!-- Page Preloder -->
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="canvas-close">
+        <i class="fa fa-close"></i>
+      </div>
+      <ul class="main-menu mobile-menu">
+        <li>
+          <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
+        </li>
+        <li><a href="./About">소개</a></li>
+        <li>
+          <a href="./fair">AI경진대회</a>
+          <ul class="dropdown">
+            <li><a href="/fair_nvidia">2020 DREAM_AI Healthcare Hackathon </a></li>
+            <li><a href="/fair_intel">2020 DREAM_AI Drone Competition</a></li>
+            <li><a href="/fair_aws">2020 DREAM_AI DeepRacer Competition</a></li>
+            <li><a href="/fair_lge">2020 DREAM_AI Smart Device Hackathon</a></li>
+            <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
+          </ul>
+        </li>
+        <li><a href="./school">AI기술창업교육</a></li>
+        <li><a href="./meetup">창업 및 기업지원</a></li>
+        <li class="active"><a href="./foundation">사업기반 인프라 구축</a></li>
+        <li><a href="./voc">문의하기</a></li>
+        <!-- <li><a href="#">meet up</a></li> -->
+      </ul>
+      <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+      <div class="header__nav" style="height: 100px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="logo" style="position: inherit; top: -12px">
+                <a
+                  href="./"
+                  style="
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 7px 0;
+                    font-size: 30px;
+                  "
+                  ><img
+                    src="img/AI_icon_white_small.png"
+                    alt=""
+                    style="width: 36px; top: -4px; position: relative"
+                  />
+                  꿈꾸는아이</a
+                ><br />
+                <p style="font-size: 6px; color: white; position: absolute; top: 74px">
+                  인공지능산업융합사업단 |
+                  <img src="img/logo3.png" alt="" style="width: 20px; margin-bottom: 1px" />
+                  <font style="color: #bb1c1c">G</font>IST 인공지능연구소
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-9" style="left: 5%">
+              <div class="nav-menu">
+                <ul class="main-menu">
+                  <li>
+                    <a href="/"><img src="img/home-run.png" alt="" style="width: 20px" /></a>
+                  </li>
+                  <li><a href="./About">소개</a></li>
+                  <li>
+                    <a href="./fair">AI경진대회</a>
+                    <ul class="dropdown">
+                      <li>
+                        <a href="/fair_nvidia">2020 DREAM_AI Healthcare Hackathon </a>
+                      </li>
+                      <li><a href="/fair_intel">2020 DREAM_AI Drone Competition</a></li>
+                      <li><a href="/fair_aws">2020 DREAM_AI DeepRacer Competition</a></li>
+                      <li>
+                        <a href="/fair_lge">2020 DREAM_AI Smart Device Hackathon</a>
+                      </li>
+                      <li><a href="/fair_open">2020 DREAM_AI Open Challenge</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="./school">AI기술창업교육</a>
+                  </li>
+                  <li><a href="./meetup">창업 및 기업지원</a></li>
+                  <li class="active"><a href="./foundation">사업기반 인프라 구축</a></li>
+                  <li><a href="./voc">문의하기</a></li>
+                  <!-- <li><a href="#">meet up</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="canvas-open">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" style="background-color: #3a4288">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-text">
+              <h2 style="text-shadow: 0px 0px 0px black">
+                <a href="https://gistvdi.maymust.co.kr/" style="color: white;">
+                VDI 접속 바로가기 (클릭)
+ <br /></a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Results Section Begin -->
+    <section class="schedule-section spad">
+      <div class="container">
+        <div class="row" id="GIAI1">
+          <!-- <div
+            class="col-12 ml-auto text-justify aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            style="background-color: #1413130a; text-align: center;"
+            
+          >
+            <p>
+              <h2
+                class="section-title mb-3 aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay=""
+                style="text-align: center;"
+              >
+                안내사항
+              </h2>
+              <br>
+              <p>
+              ∙ 대회 내용을 충분히 숙지한 후에, 꿈꾸는아이 경진대회 참가신청을 해 주시기 바랍니다.
+              <br />
+              ∙ <b>참가동의서와 개인정보 수집 및 이용 동의서</b>를 <b>참가접수 마감일</b>까지 제출하셔야
+              경진대회 참가신청이 최종 완료됩니다. <br />아래 2개의 제출방법 중 하나를 택하여
+              제출해 주시기 바랍니다. <br /></p>
+              <div style="text-align: center;">            <p>    <mark
+                ><b
+                  >참가동의서 및 개인정보 수집 및 이용 동의서
+                  <img src="img/pdf.png" alt="" style="width: 50px" /> <sub>(다운로드)</sub>
+                </b></mark
+              ></p></div>
+                <p>
+              - 우편 제출 : (61005) 광주광역시 북구 첨단과기로 123 (오룡동) C4 금호관 206호
+              인공지능연구소 앞 <br />
+              - 메일 제출 : info@giai.kr <br />
+              ∙ 경진대회 관련된 사항은 사전동의 없이 변경될 수 있습니다. <br />
+            </p>
+            </p>
+          </div> -->
+          <div style="text-align: center;" class="col-12"></div>
+          <div class="row col-12 mb-5 mt-5 justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2
+                class="section-title mb-3 aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay=""
+              >
+              DREAM Foundation
+
+              </h2>
+            </div>
+            <div
+              class="col-12 ml-auto text-justify aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p>
+                <br>
+                ∙ GIST 인공지능연구소는 교육생과 예비창업자에게 AI Studio를 제공합니다. AI Studio에서는 AI 전문교육과 경진대회가 진행되며, 교육과 실습에 필요한 모든 장비가 구축되어 있습니다. 인공지능연구소는 AI Studio를 제공함으로써, AI에 관심 있는 예비창업자와 시민들, 그리고 예비창업자와 참여기관이 함께 협력하여 꿈을 이룰 수 있는 AI 복합 문화 공간을 제공하고자 합니다. 
+              </p><br>
+              <div style="text-align: center"><img src="img/foundation00.png" style="width: 60%;" alt="" /><br>< 광주과학기술원 교육연구지원동(S7) 1층 AI Studio ></div>
+                <br><br><br>
+                <div style="text-align: center"><img src="img/foundation01.png" style="width: 60%;" alt="" /><br>< 사업기반 구축 개념도 : 교육장비 구성도 ></div>
+                  <p>
+                <br><br><br><b style="font-size: 1.3em">□ 개요</b><br /><br />
+                - AI 전문 교육과 경진대회를 제공할 수 있는 교육 실습장 및 관련 인프라 구축<br>
+- 현장 문제를 직접 체험하고 해결할 수 있는 경험과 학습을 위한 교육장 및 교육장비 등 모든 인프라 구축<br>
+- 예비창업자와 참여기관이 함께 협력할 수 있는 접점을 마련하고 다양한 프로그램을 통해 네트워킹의 기회 제공<br>
+- 예비창업자가 열린 공간에서 자유롭게 소통·교류하며 성장할 수 있는 인프라 구축 및 AI복합문화공간 조성<br>
+<br><br><br><b style="font-size: 1.3em">□ 기대효과</b><br /><br />
+- 데이터와 AI 플랫폼, 비즈니스 기회를 경험하고 체험할 수 있는 공간 조성<br>
+- 인공지능에 대한 일반시민의 공감대 및 관심 증대 <br>
+- 인공지능 관련 기업 간, 인력 간 매칭을 통한 시너지 효과 창출<br>
+- 인공지능에 관심 있는 학생 및 일반 시민 대상 맞춤형 교육 제공을 통한 AI‧데이터 관련 예비 창업자 육성 <br>
+              </p>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Results Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section set-bg" style="background-color: black">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="fs-logo">
+              <div class="logo">
+                <a
+                  href="./"
+                  style="
+                    font-size: 20px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 7px 0;
+                  "
+                  >꿈꾸는아이</a
+                >
+              </div>
+              <ul>
+                <li><i class="fa fa-envelope"></i> info@giai.kr</li>
+                <li>
+                  <i class="fa fa-thumb-tack"></i> (우)61005 광주광역시 북구 첨단과기로 123 금호관
+                  205-207호
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 offset-lg-1">
+            <div class="fs-widget">
+              <h4>Site Map</h4>
+              <ul class="fw-links">
+                <li><a href="https://giai.kr">인공지능 연구소</a></li>
+              </ul>
+              <ul class="fw-links">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCShQsz_Rrdi-UFP-RY3zY1A/videos"
+                    >꿈꾸는아이 유튜브</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
